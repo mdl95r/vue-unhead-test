@@ -1,4 +1,4 @@
-# vue-meta-test
+# vue-unhead-test
 
 ## Project setup
 ```

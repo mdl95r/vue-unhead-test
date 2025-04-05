@@ -36,12 +36,13 @@ watch(
   (codes) => {
     if (codes !== null && codes.includes(route.params.eventCode)) {
       entry.patch({ meta: [{ name: "robots", content: "noindex" }] });
-      window.YandexRotorSettings.IsLoaded = true;
-      console.log(
-        "YandexRotorSettings.IsLoaded",
-        window.YandexRotorSettings.IsLoaded
-      );
     }
+
+    window.YandexRotorSettings.IsLoaded = true;
+    console.log(
+      "YandexRotorSettings.IsLoaded",
+      window.YandexRotorSettings.IsLoaded
+    );
   },
   { immediate: true }
 );

@@ -8,6 +8,17 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <script>
+    window.YandexRotorSettings = {
+      WaiterEnabled: true,
+      IsLoaded: function() {
+        const metaDescription = document.querySelector('meta[name="robots"]')
+        console.log(metaDescription);
+        
+        return document.title.length > 0;
+      }
+    }
+  </script>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>

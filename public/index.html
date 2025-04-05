@@ -6,18 +6,13 @@
     <meta name="yandex-verification" content="c96821e8c4cc17dc" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>...</title>
   </head>
   <script>
     window.YandexRotorSettings = {
       WaiterEnabled: true,
-      IsLoaded: function() {
-        const metaDescription = document.querySelector('meta[name="robots"]')
-        console.log(metaDescription);
-        
-        return document.title.length > 0;
-      }
-    }
+      IsLoaded: false,
+    };
   </script>
   <body>
     <noscript>

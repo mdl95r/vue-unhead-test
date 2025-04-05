@@ -16,6 +16,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  {
+    path: "/eventDetail/:eventCode",
+    name: "eventDetail",
+    component: () =>
+      import(/* webpackChunkName: "eventDetail" */ "../views/EventDetail.vue"),
+  },
 ];
 
 const router = createRouter({

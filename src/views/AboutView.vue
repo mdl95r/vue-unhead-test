@@ -9,6 +9,5 @@ import { useHead } from "@unhead/vue";
 
 useHead({
   title: "About",
-  meta: [{ name: "robots", content: "noindex" }],
 });
 </script>
